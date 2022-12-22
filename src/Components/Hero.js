@@ -1,26 +1,28 @@
-import React from 'react'
-import {Container, Row, Col, Button,} from 'react-bootstrap';
 import './Hero.css';
+import mercybg from '../Assets/mercybg.png';
+
 
 const Hero = () => {
     return (
-    <>
-    <section className='herobg'>
-    <Container lg className='hero'>
-        <Row className='custommarginpadding'>
-            <Col sm={6} className='MarginPadding'>
-                <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
-                <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
-                    Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-                <Button className='buttton' type='button' href='#'><span className='style-button'></span>Mulai Sewa Mobil</Button>
-            </Col>
-            <Col sm={6}>
-                
-            </Col>
-        </Row>
-    </Container>
+        <section id="container" className="hero">
+            <div className="container mb-1 banner ">
+                <div className="row custom-margin">
+                    <div className="col-sm-6 margin-text">
+                        <h1 className="text-styled">
+                            Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+                        </h1>
+                        <p className="text-styledd">
+                            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
+                            Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+                        </p>
+                        <button type="button" className="btn btn-primaryy "><span className="style-button">Mulai Sewa Mobil</span></button>
+                    </div>
+                    <div className="col-sm-6 mobil">
+                        <img src={mercybg} alt="mobil" className="bg  img-fluid bottom-0 end-0" />
+                    </div>
+                </div>
+            </div>
     </section>
-    </>
     );
 }
 

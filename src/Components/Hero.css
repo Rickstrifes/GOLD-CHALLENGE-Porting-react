@@ -1,16 +1,49 @@
-.herobg {
+.hero  {
     background: #F1F3FF;
+    position: relative;
+    overflow-y: hidden;
 }
 
-.hero {
-    width: 1440px;
+.custom-margin {
+    margin-top: 95px !important;
+    margin-right: 20px !important;
+}
+
+.custom-margin .margin-text {
+    margin-top: 70px;
+    margin-right: 20px !important;
+}
+
+.banner {
     height: 500px;
+    width: 1440px;
+}
+.bg {
+    position: absolute;
+    background-size: cover;
+    
 }
 
-.buttton {
+.text-styled {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+.text-styledd {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 20px !important;
+}
+
+.btn-primaryy {
     background: #5CB85F !important;
-    border-radius: 2px #5CB85F !important;
-    border: none !important;
+    border-radius: 2px;
 }
 
 .style-button {
@@ -22,9 +55,24 @@
     color: #FFFFFF;
 }
 
-
-.custommarginpadding {
-    padding-top: 100px;
+@media screen and (max-width: 375px){
+    .margin-text{
+        margin-top: 0 !important;
+    }
+    .banner {
+        width: 360px;
+        height: 710px;
+        position: relative;
+        overflow-y: hidden;
+    }
+    .btn-primaryy {
+        margin-bottom: 32px !important;
+    }
+    .mobil .bg {
+        position: absolute;
+        margin-left: 30px !important;
+    }
+    .custom-margin .margin-text {
+        position: absolute;
+    }
 }
-
-

@@ -1,0 +1,59 @@
+#services {
+    position: relative;
+}
+
+.text-style-bestcar {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.text-style-describe-car {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.text-style-car-check {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.list-icon {
+    margin-left: -35px;
+}
+
+.ourservices {
+    padding-top: 50px;
+}
+
+.services-text {
+    padding-left: 100px;
+}
+
+/* Responsive here */
+@media screen and (max-width: 375px){
+    .container-mba{
+        display: flex;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .services-text {
+        margin: 0;
+        padding: 0;
+        text-size-adjust:inherit;
+        margin-left: 5px;
+    }
+    .list-icon {
+        margin-left: 1px;
+    }
+    
+}
