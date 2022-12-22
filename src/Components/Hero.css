@@ -1,0 +1,30 @@
+.herobg {
+    background: #F1F3FF;
+}
+
+.hero {
+    width: 1440px;
+    height: 500px;
+}
+
+.buttton {
+    background: #5CB85F !important;
+    border-radius: 2px #5CB85F !important;
+    border: none !important;
+}
+
+.style-button {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+
+.custommarginpadding {
+    padding-top: 100px;
+}
+
+

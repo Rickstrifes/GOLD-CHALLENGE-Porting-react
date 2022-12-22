@@ -1,0 +1,19 @@
+.background {
+    background-color: #F1F3FF;
+}
+
+.navbar-brand {
+    width: 100px;
+    height: 34px;
+    left: 136px;
+    top: 25px;
+    background:  #0D28A6;
+}
+
+.text-link-style {
+    font-family: 'Arial'!important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
