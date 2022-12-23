@@ -1,0 +1,80 @@
+.custom-card-testimoni {
+    background-color: #F1F3FF !important;
+}   
+
+.jhon {
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.pencetKiri {
+    border: none;
+    background-color: white;
+    margin-right: 24px;
+}
+
+.pencetKanan {
+    border: none;
+    background-color: white;
+}
+
+#text-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 205px;
+    right: 25px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 375px){
+    .sijhon {
+        position: absolute;
+        display: flex;
+        background-image: url(../Assets/jhon.png) !important;
+        background-repeat: no-repeat;
+        left: 39px;
+        
+    }
+    .customrow {
+        display: inline-flex !important;
+        background: cover!important;
+        align-items: center !important;
+        margin-bottom: 30px !important;
+        margin-right: -80px !important;
+
+    }
+    .jhon2 {
+        display: none;
+    }
+    .jalansendiri {
+        display: block !important;
+        text-align: center !important;
+        margin-top: 50px !important;
+        margin-left: 10px !important;
+    }
+    #text-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: 480px;
+        left: 5px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .jhon2 {
+        display: none !important;
+    }
+}

@@ -1,5 +1,6 @@
 import './Hero.css';
 import mercybg from '../Assets/mercybg.png';
+import React from 'react';
 
 
 const Hero = () => {

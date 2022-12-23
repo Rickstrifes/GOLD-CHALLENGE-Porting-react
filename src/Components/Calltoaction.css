@@ -1,0 +1,16 @@
+.cta {
+    width: 1168px;
+    height: 326px;
+    background-color: #0D28A6;
+    border-radius: 13px;
+}
+
+@media screen and (max-width: 375px){
+    .custom-btn {
+        margin-left: 160px;
+    }
+    .cta {
+        width: 328px !important;
+        height: 420px !important;
+    }
+}
