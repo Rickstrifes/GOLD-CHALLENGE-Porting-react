@@ -1,0 +1,33 @@
+.bookingborder {
+    width: 1047px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.booking {
+    position: relative !important;
+    margin-top: -75px !important;
+    z-index: 1 !important;
+}
+
+.custom-h5-pencarian {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn-edit {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 1px solid #0D28A6 !important;
+    border-radius: 2px !important;
+    color: #0D28A6 !important;
+    font-weight: 700 !important;
+    margin-top: 65px !important;
+    margin-left: 10px !important;
+}

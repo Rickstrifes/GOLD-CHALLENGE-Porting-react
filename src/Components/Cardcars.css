@@ -1,0 +1,52 @@
+.card-luar {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 8px !important; 
+}
+
+.testcardcar {
+    position: relative !important;
+    height: 478px !important;
+    overflow: hidden !important;
+}
+
+.innova-img {
+    object-fit: cover !important;
+    width: 270px !important;
+    height: 160px !important;
+    margin-left: 35px !important;
+}
+
+.innova-style-text-span {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.innova-style-text-h5 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.innova-style-text-p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-car-btn {
+    width: 300px !important;
+    height: 48px !important;
+    background: #5CB85F !important;
+    border-radius: 2px !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    margin: auto !important;
+    margin-bottom: 25px !important;
+}

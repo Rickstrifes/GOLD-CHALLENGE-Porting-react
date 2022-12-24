@@ -6,7 +6,9 @@ import { NavLink } from 'react-router-dom';
 
 
 const Navigation = () => {
-
+  const handleScrollTop = () => {
+    window.scrollTo(0, 0);
+  }
   const handleClick = () => {
     const element = document.getElementById('services, whyus, testi, faq');
     element.scrollIntoView({ behavior: 'smooth' });
@@ -17,7 +19,7 @@ const Navigation = () => {
       {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} className=" background  fixed-top">
           <Container>
-            <Navbar.Brand className='navbar-brand'></Navbar.Brand>
+            <Navbar.Brand className='navbar-brand' onClick={handleScrollTop}></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -44,4 +46,4 @@ const Navigation = () => {
   );
 }
 
-export default Navigation;
+export default Navigation
