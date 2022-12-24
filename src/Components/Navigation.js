@@ -22,10 +22,10 @@ const Navigation = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 mb-2 me-5 text-link-style fw-bold">
-                    <Nav.Link href="#" className='active px-3 me-3'>Our Services</Nav.Link>
-                    <Nav.Link href="#" className='active px-3 me-3'>Why Us</Nav.Link>
-                    <Nav.Link href="#" className='active px-3 me-3'>Testimonial</Nav.Link>
-                    <Nav.Link href="#" className='active px-3 me-3'>FAQ</Nav.Link>
+                  <Nav.Link href="#" className='nav-link active nav-item px-3'>Our Services</Nav.Link>
+                  <Nav.Link href="#" className='nav-link active nav-item px-3'>Why Us</Nav.Link>
+                  <Nav.Link href="#" className='nav-link active nav-item px-3'>Testimonial</Nav.Link>
+                  <Nav.Link href="#" className='nav-link active nav-item px-3'>FAQ</Nav.Link>
                   </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
