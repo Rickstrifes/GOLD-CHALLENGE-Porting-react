@@ -2,7 +2,8 @@ import {Container, Nav, Navbar, Offcanvas} from 'react-bootstrap';
 import './Navigation.css';
 import React from 'react';
 import { Fragment } from 'react';
-import { Link } from 'react-router-dom'; 
+
+
 
 const Navigation = () => {
   return (
@@ -23,14 +24,14 @@ const Navigation = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 mb-2 me-5 text-link-style fw-bold">
-                  <Link to="/Ourservices" className='nav-link active nav-item px-3'>Our Services</Link>
-                  <Link to="/Whyus" className='nav-link active nav-item px-3'>Why Us</Link>
-                  <Link to="/Testimoni" className='nav-link active nav-item px-3'>Testimonial</Link>
-                  <Link to="/Faqaccordion" className='nav-link active nav-item px-3'>FAQ</Link>
+                  <Nav.Link className="nav-link active nav-item px-3" href="#services">Our Services</Nav.Link>
+                  <Nav.Link className="nav-link active nav-item px-3" href="#whyus">Why Us</Nav.Link>
+                  <Nav.Link className="nav-link active nav-item px-3" href="#testi">Testimonial</Nav.Link>
+                  <Nav.Link className="nav-link active nav-item px-3" href="#faq">FAQ</Nav.Link>
                   </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-          </Container>
+          </Container>  
         </Navbar>
       ))}
     </Fragment>

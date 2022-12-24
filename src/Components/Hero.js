@@ -5,7 +5,7 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <section id="container" className="hero">
+        <section id="hero" className="hero">
             <div className="container mb-1 banner ">
                 <div className="row custom-margin">
                     <div className="col-sm-6 margin-text">
