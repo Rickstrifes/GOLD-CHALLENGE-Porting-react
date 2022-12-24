@@ -2,10 +2,16 @@ import {Container, Nav, Navbar, Offcanvas} from 'react-bootstrap';
 import './Navigation.css';
 import React from 'react';
 import { Fragment } from 'react';
-
+import { NavLink } from 'react-router-dom';
 
 
 const Navigation = () => {
+
+  const handleClick = () => {
+    const element = document.getElementById('services, whyus, testi, faq');
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <Fragment>
       {['sm'].map((expand) => (
@@ -24,10 +30,10 @@ const Navigation = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 mb-2 me-5 text-link-style fw-bold">
-                  <Nav.Link className="nav-link active nav-item px-3" href="#services">Our Services</Nav.Link>
-                  <Nav.Link className="nav-link active nav-item px-3" href="#whyus">Why Us</Nav.Link>
-                  <Nav.Link className="nav-link active nav-item px-3" href="#testi">Testimonial</Nav.Link>
-                  <Nav.Link className="nav-link active nav-item px-3" href="#faq">FAQ</Nav.Link>
+                  <NavLink onClick={handleClick} to="/services" className="nav-link active nav-item px-3">Our Services</NavLink>
+                  <NavLink onClick={handleClick} to="/whyus" className="nav-link active nav-item px-3">Why Us</NavLink>
+                  <NavLink onClick={handleClick} to="/testi" className="nav-link active nav-item px-3">Testimonial</NavLink>
+                  <NavLink onClick={handleClick} to="/faq" className="nav-link active nav-item px-3">FAQ</NavLink>
                   </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
