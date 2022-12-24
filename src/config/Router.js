@@ -1,5 +1,5 @@
 import {
-    createBrowserRouter,
+    createBrowserRouter
 } from "react-router-dom";
 import RenderLayout from "./RenderLayout";
 import Hero from '../Components/Hero';
@@ -8,33 +8,18 @@ import Whyus from '../Components/Whyus';
 import Testimoni from '../Components/Testimoni';
 import Calltoaction from '../Components/Calltoaction';
 import Faqaccordion from '../Components/Faqaccordion';
+import Searchbar from '../Components/Searchbar';
 
 // NOTES: each time you want to add new page, add it here
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <RenderLayout children={<Hero />} />
+        element: <RenderLayout children={[<Hero />, <Ourservices />, <Whyus />, <Testimoni />, <Calltoaction />, <Faqaccordion />]} />
     },
     {
-        path: "/services",
-        element: <RenderLayout children={<Ourservices />}/>
-    },
-    {
-        path: "/whyus",
-        element: <RenderLayout children={<Whyus />} />
-    },
-    {
-        path: "/testi",
-        element: <RenderLayout children={<Testimoni />} />
-    },
-    {
-        path: "/",
-        element: <RenderLayout children={<Calltoaction />} />
-    },
-    {
-        path: "/faq",
-        element: <RenderLayout children={<Faqaccordion />} />
+        path: "/carimobil",
+        element: <RenderLayout children={[<Hero />, <Searchbar />]} />
     },
 ]);
 

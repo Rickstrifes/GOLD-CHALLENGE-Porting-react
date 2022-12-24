@@ -30,10 +30,10 @@ const Navigation = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 mb-2 me-5 text-link-style fw-bold">
-                  <NavLink onClick={handleClick} to="/services" className="nav-link active nav-item px-3">Our Services</NavLink>
-                  <NavLink onClick={handleClick} to="/whyus" className="nav-link active nav-item px-3">Why Us</NavLink>
-                  <NavLink onClick={handleClick} to="/testi" className="nav-link active nav-item px-3">Testimonial</NavLink>
-                  <NavLink onClick={handleClick} to="/faq" className="nav-link active nav-item px-3">FAQ</NavLink>
+                  <NavLink onClick={handleClick} to="/#services" className="nav-link active nav-item px-3">Our Services</NavLink>
+                  <NavLink onClick={handleClick} to="/#whyus" className="nav-link active nav-item px-3">Why Us</NavLink>
+                  <NavLink onClick={handleClick} to="/#testi" className="nav-link active nav-item px-3">Testimonial</NavLink>
+                  <NavLink onClick={handleClick} to="/#faq" className="nav-link active nav-item px-3">FAQ</NavLink>
                   </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

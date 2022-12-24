@@ -1,0 +1,59 @@
+.text-styler {
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3C3C3C;
+}
+
+.customlabel {
+    position: relative !important;
+    width: 195px !important;
+}
+
+.btn-customize {
+    display: flex !important;
+    justify-content: center !important;
+    align-self: start !important;
+    margin-top: 23px !important;
+    
+}
+
+.btn-customformer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 92px;
+    height: 36px;
+    background: #5CB85F;
+    border-radius: 2px;
+    border: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.linkhilang {
+    text-decoration: none;
+}
+
+.booking {
+    position: relative;
+    margin-top: -55px !important;
+    z-index: 1 !important;
+}
+
+.bookingborder {
+    width: 1047px !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    background: white !important;
+}
+
+.bg-white {
+    padding: 25px !important;
+}
