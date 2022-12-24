@@ -44,6 +44,7 @@
 .booking {
     position: relative;
     margin-top: -55px !important;
+    padding-top: 15px;
     z-index: 1 !important;
 }
 
