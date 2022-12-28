@@ -1,6 +1,6 @@
 import React from 'react';
 import './CardCarDetail.css';
-
+import kategori from '../Assets/kategori.png';
 
 const CardCarDetail = (props) => {
     const carID = props.carID
@@ -53,13 +53,20 @@ const CardCarDetail = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-5 pt-5">
-                            <div className="card">
-                                <div className="card-body testcardcar">
-                                    <img src={props.image} className="card-img-top innova-img mt-5" alt="innova" />
-                                    <div className="mt-5 pt-3">
-                                        <span className="text-black p-2 mt-5 innova-style-text-span" key={carID}>{props.name}</span>
-                                            <h5 className="card-title p-2 innova-style-text-h5" key={carID}>{props.price}</h5>
+                        <div class="col-lg-5">
+                            <div class="card style-detail-sewa-card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center d-sm-flex justify-content-sm-center">
+                                        <img src={props.image} alt="inimobil" />
+                                    </div>
+                                    <div class="mt-5 ms-3">
+                                        <h5 class="stylepaket-text" key={carID}>{props.name}</h5>
+                                        <img src={kategori} alt="inimobil" />
+                                        <p key={carID}>{props.category}</p>
+                                    </div>
+                                    <div class="mt-5 mb-5  ms-3 d-flex justify-content-between">
+                                        <h5 class="stylepaket-text">Total</h5>
+                                        <h5 class="stylepaket-text me-1" key={carID}>{props.price}</h5>
                                     </div>
                                 </div>
                             </div>
