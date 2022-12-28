@@ -7,16 +7,16 @@
     color: #3C3C3C;
 }
 
-.customlabel {
+/* .customlabel {
     position: relative !important;
     width: 195px !important;
-}
+} */
 
 .btn-customize {
     display: flex !important;
     justify-content: center !important;
     align-self: start !important;
-    margin-top: 23px !important;
+    margin-top: 31px !important;
     
 }
 

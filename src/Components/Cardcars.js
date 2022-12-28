@@ -1,60 +1,31 @@
 import React from 'react';
 import './Cardcars.css';
-import Innova from '../Assets/innova.png'
+import { useNavigate } from 'react-router-dom';
 
-const Cardcars = () => {
+const Cardcars = (props) => {
+    const carID = props.carID;
+
+    const navigate = useNavigate();
+    const handlePilihMobil = (idMobil) => {
+        navigate('/detailpaketsewa', { state: { idMobil: idMobil } });
+    };
+
     return (
-        <section id="cards-car">
-            <div class="container pb-5 pt-3">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100 card-luar">
-                            <div class="card-body testcardcar">
-                                <img src={Innova} class="card-img-top innova-img mt-5" alt="innova" />
-                                <div class="mt-5 pt-3">
-                                    <span class="text-black p-2 mt-5 innova-style-text-span">Innova</span>
-                                    <h5 class="card-title p-2 innova-style-text-h5">Rp 500.000 / hari</h5>
-                                    <p class="card-text p-2 innova-style-text-p">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary card-car-btn fw-bold">Pilih Mobil</button>
+            <div className="col-lg-4 pt-5">
+                <div className="card">
+                    <div className="card-body testcardcar">
+                        <img src={props.image} className="card-img-top innova-img mt-5" alt="innova" />
+                        <div className="mt-5 pt-3">
+                            <span className="text-black p-2 mt-5 innova-style-text-span" key={carID}>{props.name}</span>
+                                <h5 className="card-title p-2 innova-style-text-h5" key={carID}>{props.price} / hari</h5>
+                                <p className="card-text p-2 innova-style-text-p">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100 card-luar">
-                            <div class="card-body testcardcar">
-                                <img src={Innova} class="card-img-top innova-img mt-5" alt="innova" />
-                                <div class="mt-5 pt-3">
-                                    <span class="text-black p-2 mt-5 innova-style-text-span">Innova</span>
-                                    <h5 class="card-title p-2 innova-style-text-h5">Rp 500.000 / hari</h5>
-                                    <p class="card-text p-2 innova-style-text-p">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary card-car-btn fw-bold">Pilih Mobil</button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 card-luar">
-                            <div class="card-body testcardcar">
-                                <img src={Innova} class="card-img-top innova-img mt-5" alt="innova" />
-                                <div class="mt-5 pt-3">
-                                    <span class="text-black p-2 mt-5 innova-style-text-span">Innova</span>
-                                    <h5 class="card-title p-2 innova-style-text-h5">Rp 500.000 / hari</h5>
-                                    <p class="card-text p-2 innova-style-text-p">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary card-car-btn fw-bold">Pilih Mobil</button>
-                        </div>
-                    </div>
+                        <button className="btn btn-primary card-car-btn fw-bold" onClick={() => handlePilihMobil(carID)}>Pilih Mobil</button>
                 </div>
             </div>
-    </section>
     )
 }
 

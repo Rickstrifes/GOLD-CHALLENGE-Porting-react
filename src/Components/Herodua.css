@@ -1,0 +1,56 @@
+.hero  {
+    background: #F1F3FF;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.custom-margin {
+    margin-top: 95px !important;
+    margin-right: 20px !important;
+}
+
+.custom-margin .margin-text {
+    margin-top: 70px;
+    margin-right: 20px !important;
+}
+
+.banner {
+    height: 500px;
+    width: 1440px;
+}
+.bg {
+    position: absolute;
+    background-size: cover;
+    
+}
+
+.text-styled {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+.text-styledd {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 20px !important;
+}
+
+.btn-primaryy {
+    background: #5CB85F !important;
+    border-radius: 2px;
+}
+
+.style-button {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}

@@ -11,7 +11,9 @@ import Faqaccordion from '../Components/Faqaccordion';
 import Searchbar from '../Components/Searchbar';
 import Heroblank from '../Components/Heroblank';
 import Searchbardua from '../Components/Searchbardua';
-import Cardcars from '../Components/Cardcars';
+import Herodua from "../Components/Herodua";
+import HasilpencarianApiCard from "../Components/HasilpencarianApiCard";
+import HasilpencarianCardCarDetail from "../Components/HasilpencarianCardCarDetail";
 
 // NOTES: each time you want to add new page, add it here
 
@@ -22,11 +24,15 @@ export const router = createBrowserRouter([
     },
     {
         path: "/carimobil",
-        element: <RenderLayout children={[<Hero />, <Searchbar />]} />
+        element: <RenderLayout children={[<Herodua />, <Searchbar />]} />
     },
     {
         path: "/hasilpencarian",
-        element: <RenderLayout children={[<Heroblank />, <Searchbardua />, <Cardcars />]} />
+        element: <RenderLayout children={[<Heroblank />, <Searchbardua />, <HasilpencarianApiCard />]} />
+    },
+    {
+        path: "/detailpaketsewa",
+        element: <RenderLayout children={[<Heroblank />, <Searchbardua />, <HasilpencarianCardCarDetail />]} />
     },
 ]);
 
