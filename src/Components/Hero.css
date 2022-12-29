@@ -60,8 +60,8 @@
         margin-top: 0 !important;
     }
     .banner {
-        width: 360px;
-        height: 710px;
+        width: 360px !important;
+        height: 710px !important;
         position: relative;
         overflow-y: hidden;
     }
