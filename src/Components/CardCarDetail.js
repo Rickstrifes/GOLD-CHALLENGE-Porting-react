@@ -53,20 +53,20 @@ const CardCarDetail = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5">
-                            <div class="card style-detail-sewa-card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center d-sm-flex justify-content-sm-center">
+                        <div className="col-lg-5">
+                            <div className="card style-detail-sewa-card">
+                                <div className="card-body">
+                                    <div className="d-flex justify-content-center d-sm-flex justify-content-sm-center">
                                         <img src={props.image} alt="inimobil" />
                                     </div>
-                                    <div class="mt-5 ms-3">
-                                        <h5 class="stylepaket-text" key={carID}>{props.name}</h5>
+                                    <div className="mt-5 ms-3">
+                                        <h5 className="stylepaket-text" key={carID}>{props.name}</h5>
                                         <img src={kategori} alt="inimobil" />
                                         <p key={carID}>{props.category}</p>
                                     </div>
-                                    <div class="mt-5 mb-5  ms-3 d-flex justify-content-between">
-                                        <h5 class="stylepaket-text">Total</h5>
-                                        <h5 class="stylepaket-text me-1" key={carID}>{props.price}</h5>
+                                    <div className="mt-5 mb-5  ms-3 d-flex justify-content-between">
+                                        <h5 className="stylepaket-text">Total</h5>
+                                        <h5 className="stylepaket-text me-1" key={carID}>{props.price}</h5>
                                     </div>
                                 </div>
                             </div>

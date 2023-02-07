@@ -4,9 +4,9 @@ import './Heroblank.css';
 const Heroblank = () => {
     return (
         <section id="bgkosong">
-        <div class="container-fluid bgkosongbiru">
-            <div class="row">
-                <div class="col">
+        <div className="container-fluid bgkosongbiru">
+            <div className="row">
+                <div className="col">
 
                 </div>
             </div>
