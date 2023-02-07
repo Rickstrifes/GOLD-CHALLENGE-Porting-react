@@ -36,6 +36,7 @@ const Navigation = () => {
                   <NavLink onClick={handleClick} to="/#whyus" className="nav-link active nav-item px-3">Why Us</NavLink>
                   <NavLink onClick={handleClick} to="/#testi" className="nav-link active nav-item px-3">Testimonial</NavLink>
                   <NavLink onClick={handleClick} to="/#faq" className="nav-link active nav-item px-3">FAQ</NavLink>
+                  <button type="button" className='btn btn-success'>Register</button>
                   </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
