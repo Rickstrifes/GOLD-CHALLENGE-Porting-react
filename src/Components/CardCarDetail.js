@@ -3,6 +3,7 @@ import './CardCarDetail.css';
 import kategori from '../Assets/kategori.png';
 
 const CardCarDetail = (props) => {
+    
     const carID = props.carID
 
     
@@ -77,4 +78,4 @@ const CardCarDetail = (props) => {
     )
 }
 
-export default CardCarDetail;
+export default CardCarDetail

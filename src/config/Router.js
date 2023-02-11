@@ -12,8 +12,10 @@ import Searchbar from '../Components/Searchbar';
 import Heroblank from '../Components/Heroblank';
 import Searchbardua from '../Components/Searchbardua';
 import Herodua from "../Components/Herodua";
-import HasilpencarianApiCard from "../Components/HasilpencarianApiCard";
-import HasilpencarianCardCarDetail from "../Components/HasilpencarianCardCarDetail";
+// import HasilpencarianApiCard from "../Components/HasilpencarianApiCard";
+// import HasilpencarianCardCarDetail from "../Components/HasilpencarianCardCarDetail";
+import Cars from "../Pages/Cars";
+import DetailCars from "../Pages/DetailCars";
 
 // NOTES: each time you want to add new page, add it here
 
@@ -28,11 +30,11 @@ export const router = createBrowserRouter([
     },
     {
         path: "/hasilpencarian",
-        element: <RenderLayout children={[<Heroblank />, <Searchbardua />, <HasilpencarianApiCard />]} />
+        element: <RenderLayout children={[<Heroblank />, <Searchbardua />, <Cars />]} />
     },
     {
         path: "/detailpaketsewa",
-        element: <RenderLayout children={[<Heroblank />, <Searchbardua />, <HasilpencarianCardCarDetail />]} />
+        element: <RenderLayout children={[<Heroblank />, <Searchbardua />, <DetailCars />]} />
     },
 ]);
 

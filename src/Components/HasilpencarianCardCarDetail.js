@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react';
 import axios from 'axios';
-import CardCarDetail from './CardCarDetail';
+import CardCarDetail from '../Components/CardCarDetail';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const HasilpencarianCardCarDetail = (id) => {
+const HasilpencarianCardCarDetail = () => {
     // tampung variable
-    const [car, setCar] = useState([]);
-    const location = useLocation();
-    const carID = location.state.idMobil;
+    const [detailCar, setdetailCar] = useState([]);
+    const location = useLocation(); //CarsDetail di pages
+    const carID = location.state.idMobil; //CarsDetail di pages
 
     useEffect(() => {
         const url = 'https://bootcamp-rent-cars.herokuapp.com'
@@ -21,7 +21,7 @@ const HasilpencarianCardCarDetail = (id) => {
           .then( async res => {
             console.log(res.data);
             const temporaryCar = await res.data;
-            setCar(temporaryCar);
+            setdetailCar(temporaryCar);
           })
           .catch((err) => {
             console.log(err)
@@ -32,7 +32,7 @@ const HasilpencarianCardCarDetail = (id) => {
                 <section id="hasilpencarianApiCard">
                     <div className="container">
                         <div className="row">
-                          <CardCarDetail name={car.name} image={car.image} price={car.price} carID={car.id} />;
+                          <CardCarDetail name={detailCar.name} image={detailCar.image} price={detailCar.price} detailCarID={detailCar.id} />;
                         </div>  
                     </div>  
                 </section>
