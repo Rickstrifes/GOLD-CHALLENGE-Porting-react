@@ -1,8 +1,5 @@
-import {
-  RouterProvider,
-} from "react-router-dom";
-import { router } from './config/Router';
-
+import { RouterProvider } from "react-router-dom";
+import { router } from "./config/Router";
 
 // NOTES: you can declare the router contants here as the comment below
 // or seperate it to other folder (or file) as this example for readibility-wise only

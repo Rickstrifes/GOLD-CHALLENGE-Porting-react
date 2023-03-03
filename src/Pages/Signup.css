@@ -1,0 +1,108 @@
+.logo {
+  width: 100px;
+  height: 34px;
+  left: 175px;
+  top: 274px;
+  background: #cfd4ed;
+  margin-bottom: 20px;
+}
+
+.kiri {
+  background: #ffffff;
+}
+
+.loginkiri {
+  margin-top: 200px !important;
+}
+
+.welcomeback {
+  display: flex;
+  justify-content: start;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.text-start {
+  display: flex;
+  justify-content: start;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-group {
+  width: 370px;
+}
+
+.textsign {
+  font-family: "Arial" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  display: flex;
+  margin-left: 65px;
+  padding-top: 15px;
+}
+
+.anchor {
+  display: flex;
+  margin-left: 5px;
+  color: #0d28a6 !important;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bgkosong {
+  display: flex;
+  position: absolute;
+  width: 720px;
+  height: 770px;
+  background: #0d28a6;
+  overflow-y: hidden;
+}
+
+.textcar {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  color: #ffffff;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-left: 65px;
+}
+
+.landing {
+  position: absolute;
+  z-index: 1;
+  margin-right: 40px !important;
+}
+
+.btn-signup {
+  background: #0d28a6;
+  border-radius: 2px;
+  width: 370px;
+  height: 36px;
+  overflow-y: hidden;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  left: 175px;
+  top: 590px;
+}
