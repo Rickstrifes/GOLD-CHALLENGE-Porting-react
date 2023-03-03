@@ -1,50 +1,56 @@
-import {Container, Nav, Navbar, Offcanvas} from 'react-bootstrap';
-import './Navigation.css';
-import React from 'react';
-import { Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
-
+import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
+import "./Navigation.css";
+import React from "react";
+import { Fragment } from "react";
+import { NavLink } from "react-router-dom";
+import TombolLogout from "./TombolLogout";
+import TombolRegister from "./TombolRegister";
 
 const Navigation = () => {
   const handleScrollTop = () => {
     window.scrollTo(0, 0);
-  }
+  };
   const handleClick = () => {
-    const element = document.getElementById('services, whyus, testi, faq');
-    element.scrollIntoView({ behavior: 'smooth' });
+    const element = document.getElementById("services, whyus, testi, faq");
+    element.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <Fragment>
-      {['sm'].map((expand) => (
+      {["sm"].map((expand) => (
         <Navbar key={expand} expand={expand} className=" background  fixed-top">
           <Container>
-            <Navbar.Brand className='navbar-brand' onClick={handleScrollTop}></Navbar.Brand>
+            <Navbar.Brand className="navbar-brand" onClick={handleScrollTop}></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end">
+            <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end">
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className='fw-bolder p-3'>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className="fw-bolder p-3">
                   BCR
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 mb-2 me-5 text-link-style fw-bold">
-                  <NavLink onClick={handleClick} to="/#services" className="nav-link active nav-item px-3">Our Services</NavLink>
-                  <NavLink onClick={handleClick} to="/#whyus" className="nav-link active nav-item px-3">Why Us</NavLink>
-                  <NavLink onClick={handleClick} to="/#testi" className="nav-link active nav-item px-3">Testimonial</NavLink>
-                  <NavLink onClick={handleClick} to="/#faq" className="nav-link active nav-item px-3">FAQ</NavLink>
-                  <button type="button" className='btn btn-success'>Register</button>
-                  </Nav>
+                <Nav className="justify-content-end flex-grow-1 mb-2 me-5 text-link-style fw-bold">
+                  <NavLink onClick={handleClick} to="/#services" className="nav-link active nav-item px-3">
+                    Our Services
+                  </NavLink>
+                  <NavLink onClick={handleClick} to="/#whyus" className="nav-link active nav-item px-3">
+                    Why Us
+                  </NavLink>
+                  <NavLink onClick={handleClick} to="/#testi" className="nav-link active nav-item px-3">
+                    Testimonial
+                  </NavLink>
+                  <NavLink onClick={handleClick} to="/#faq" className="nav-link active nav-item px-3">
+                    FAQ
+                  </NavLink>
+                  <li className="buttonregist">{Auth.isAuthorization() ? <TombolLogout /> : <TombolRegister />}</li>
+                </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-          </Container>  
+          </Container>
         </Navbar>
       ))}
     </Fragment>
   );
-}
+};
 
-export default Navigation
+export default Navigation;
