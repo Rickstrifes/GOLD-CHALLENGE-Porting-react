@@ -3,8 +3,6 @@ import "./Navigation.css";
 import React from "react";
 import { Fragment } from "react";
 import { NavLink } from "react-router-dom";
-import TombolLogout from "./TombolLogout";
-import TombolRegister from "./TombolRegister";
 
 const Navigation = () => {
   const handleScrollTop = () => {
@@ -42,7 +40,9 @@ const Navigation = () => {
                   <NavLink onClick={handleClick} to="/#faq" className="nav-link active nav-item px-3">
                     FAQ
                   </NavLink>
-                  <li className="buttonregist">{Auth.isAuthorization() ? <TombolLogout /> : <TombolRegister />}</li>
+                  <NavLink onClick={handleClick} to="/signup" className="btn btn-success">
+                    Registrasi
+                  </NavLink>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
