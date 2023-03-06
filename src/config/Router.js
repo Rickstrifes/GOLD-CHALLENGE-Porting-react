@@ -19,7 +19,7 @@ import FindCar from "../Pages/FindCar";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <RenderLayout children={[<HomePage />]} />,
+    element: <RenderLayout children={[<HomePage /> ]} />,
   },
   ,
   {

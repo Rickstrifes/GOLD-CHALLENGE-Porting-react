@@ -14,6 +14,7 @@ const HasilPencarian = ({setHeroVisible}) => {
     const [cars, setCars] = useState([]);
     const [loading, setLoading] = useState(false);
     const [emptyData, setEmptyData] = useState(false);
+    
 
     const baseUrl = "https://bootcamp-rent-cars.herokuapp.com/customer";
 

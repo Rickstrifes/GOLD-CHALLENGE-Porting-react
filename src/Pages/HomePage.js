@@ -15,6 +15,7 @@ const HomePage = () => {
         <Testimoni />
         <CTABaner />
         <Faqaccordion />
+        
     </div>
   )
 }

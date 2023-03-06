@@ -37,6 +37,7 @@ const Testimoni = () => {
                                                     <img src={Rate} alt="" />
                                                     <img src={Rate} alt="" />
                                                 </div>
+                                                
                                                 <p className="fw-bold mt-1">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                                 lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
@@ -69,6 +70,7 @@ const Testimoni = () => {
                                                     <img src={Rate} alt="" />
                                                     <img src={Rate} alt="" />
                                                     <img src={Rate} alt="" />
+
                                                 </div>
                                                 <p className="fw-bold mt-1">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                                 lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -99,6 +101,7 @@ const Testimoni = () => {
                                                     <img src={Rate} alt="" />
                                                     <img src={Rate} alt="" />
                                                     <img src={Rate} alt="" />
+                                                    
                                                 </div>
                                                 <p className="fw-bold mt-1">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                                 lorem ipsum dolor sit amet, consectetur adipiscing elit,

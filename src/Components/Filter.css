@@ -11,6 +11,7 @@
   
   .filter-border.overlay-active {
     z-index: 101;
+    
   }
   
   .filter-form {

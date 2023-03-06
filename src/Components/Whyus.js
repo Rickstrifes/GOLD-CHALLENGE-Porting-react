@@ -13,6 +13,7 @@ const WhyUs = () => {
           <h3>Why Us?</h3>
           <h4>Mengapa harus pilih Binar Car Rental?</h4>
         </div>
+        
         <div className="row">
           <div className="col-lg-3 col-md-6">
             <div className="why-border">

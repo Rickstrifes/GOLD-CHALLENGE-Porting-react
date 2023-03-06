@@ -10,6 +10,7 @@ const NotFoundPage = () => {
         <em>Maybe you entered the wrong word</em>
         <div className="back-control">
             <Link to="/"><bold>Back To Home</bold></Link>
+            
         </div>
     </div>
   )

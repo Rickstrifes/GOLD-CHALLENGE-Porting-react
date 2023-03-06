@@ -34,6 +34,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          
           <div className="col-lg-4 col-md-8">
             <div className="info-binar">
               <h4>Connect with us</h4>

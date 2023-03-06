@@ -2,11 +2,12 @@ import React from 'react'
 
 const BlankArea = () => {
   return (
-    <div style={{
+    <div 
+      style={{
         height: '200px',
         backgroundColor: '#F1F3FF',
         width: '100%'
-    }}></div>
+      }}></div>
   )
 }
 

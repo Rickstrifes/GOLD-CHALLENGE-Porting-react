@@ -6,6 +6,7 @@ import HasilPencarian from '../Components/HasilPencarian'
 
 const FindCar = () => {
   const [heroVisible, setHeroVisible] = useState(true);
+  
 
   return (
     <div className='find-car'>
