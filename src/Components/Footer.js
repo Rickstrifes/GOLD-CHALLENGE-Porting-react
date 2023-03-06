@@ -1,52 +1,69 @@
 import React from 'react';
-import IconFacebook from '../Assets/icon_facebook.png';
-import IconInstagram from '../Assets/icon_instagram.png';
-import IconTwitter from '../Assets/icon_twitter.png';
-import IconMail from '../Assets/icon_mail.png';
-import IconTitch from '../Assets/icon_twitch.png';
 import './Footer.css';
-import { Nav } from 'react-bootstrap';
+import FbIcon from '../Assets/icon_facebook.png';
+import IgIcon from '../Assets/icon_instagram.png';
+import TwtIcon from '../Assets/icon_twitter.png';
+import MailIcon from '../Assets/icon_mail.png';
+import TwcIcon from '../Assets/icon_twitch.png';
 
 const Footer = () => {
-    return (
-        <footer className=" pt-5 pb-4">
-        <div className="container text-center text-sm-start text-sm-left">
-            <div className="row text-center text-sm-left">
-                <div className="col-md-3 col-lg-3 col-xl-3  mt-3">
-                    <p className="text-lg-start text-sm-start text-footer">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
-                    <p className="text-lg-start text-footer">binarcarrental@gmail.com</p>
-                    <p className="text-lg-start text-footer">081-233-334-808</p>
-                </div>
-                <div className="col-sm-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <p>
-                        <Nav.Link className="text-black text-footer1">Our services</Nav.Link>
-                    </p>
-                    <p>
-                        <Nav.Link className="text-black text-footer1">Why Us</Nav.Link>
-                    </p>
-                    <p>
-                        <Nav.Link className="text-black text-footer1">Testimonial</Nav.Link>
-                    </p>
-                    <p>
-                        <Nav.Link className="text-black text-footer1">FAQ</Nav.Link>
-                    </p>
-                </div>
-                <div className="col-sm-4 col-lg-4 col-xl-3 mx-auto mt-3">
-                    <h5 className="text-uppercase mb-4 text-footer2">Connect with us</h5>
-                    <img src={IconFacebook} alt="facebook" />
-                    <img src={IconInstagram} alt="instagram" />
-                    <img src={IconTwitter} alt="twitter" />
-                    <img src={IconMail} alt="mail" />
-                    <img src={IconTitch} alt="twitch" />
-                </div>
-                <div className="col-sm-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <p className="text-uppercase mb-4 text-footer2">Copyright Binar 2022</p>
-                    <p className="brand-logo m-auto"></p>
-                </div>
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-3 col-md-8">
+            <div className="address">
+              <h4>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</h4>
+              <h4>binarcarrental@gmail.com</h4>
+              <h4>081-233-334-808</h4>
             </div>
+          </div>
+          <div className="col-lg-3 col-md-4">
+            <ul className="nav-footer">
+              <li>
+                <a href="our-services">Our Services</a>
+              </li>
+              <li>
+                <a href="why-us">Why Us</a>
+              </li>
+              <li>
+                <a href="testimonial">Testimonial</a>
+              </li>
+              <li>
+                <a href="faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-4 col-md-8">
+            <div className="info-binar">
+              <h4>Connect with us</h4>
+              <a href="https://www.facebook.com/binaracademy/">
+                <img src={FbIcon} alt="" />
+              </a>
+              <a href="https://www.instagram.com/academybinar/">
+                <img src={IgIcon} alt="" />
+              </a>
+              <a href="https://twitter.com/academybinar">
+                <img src={TwtIcon} alt="" />
+              </a>
+              <a href="info@binar.co.id">
+                <img src={MailIcon} alt="" />
+              </a>
+              <a href="https://m.twitch.tv/">
+                <img src={TwcIcon} alt="" />
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-2 col-md-4">
+            <div className="copyright">
+              <h4>&copy; Copyright Binar 2022</h4>
+              <p className="brand-logo m-auto"></p>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-    )
-}
+  );
+};
 
-export default Footer
+export default Footer;

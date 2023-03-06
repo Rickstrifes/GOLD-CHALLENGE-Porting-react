@@ -1,37 +1,82 @@
-footer {
-    margin-top: 60px;
+.footer {
+  padding: 275px 0 25px;
 }
 
-.text-footer {
-    font-family: 'Arial'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 14px !important;
-    line-height: 20px !important;
+.footer h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding-bottom: 16px;
 }
 
-.text-footer1 {
-    font-family: 'Arial' !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 14px !important;
-    line-height: 20px !important;
-    color: black !important;
+.nav-footer li {
+  flex-direction: column;
+  padding-bottom: 16px;
+  padding-left: 80px;
 }
 
-.text-footer2 {
-    font-family: 'Arial' !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 14px !important;
-    line-height: 20px !important;
+.nav-footer a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-footer a:hover {
+  color: #00ac11;
+  text-decoration: underline;
+}
+
+.footer a {
+  text-decoration: none;
+  padding-right: 16px;
+}
+
+.footer a img:hover {
+  width: 10%;
+}
+
+@media (max-width:991px) {
+  .footer {
+    padding: 180px 15px 25px;
+    margin: 0 15px;
+  }
+
+  .address {
+    margin-bottom: 20px;
+  }
+
+  .nav-footer {
+    margin-bottom: 20px;
+  }
+
+  .nav-footer li {
+    padding-left: 0;
+  }
+
+  .info-binar {
+    margin: 20px 0;
+  }
+
+  .copyright {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width:767px) {
+  .footer {
+    padding-top: 120px;
+  }
 }
 
 .brand-logo {
-    width: 100px !important;
-    height: 34px !important;
-    left: 873px !important;
-    top: 36px !important;
-    background: #0D28A6 !important;
-    margin-left: 80px !important;
+  width: 100px !important;
+  height: 34px !important;
+  left: 873px !important;
+  top: 36px !important;
+  background: #0D28A6 !important;
+  margin-left: 80px !important;
+  float: left;
 }

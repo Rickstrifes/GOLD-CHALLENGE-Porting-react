@@ -2,7 +2,7 @@ import React from 'react';
 import './Testimoni.css';
 import jhon from '../Assets/jhon.png';
 import jinny from '../Assets/jinny.png';
-import Rate from '../Assets/Rate.png';
+import Rate from '../Assets/star.svg';
 import Leftbutton from '../Assets/Leftbutton.png';
 import Rightbutton from '../Assets/Rightbutton.png';
 
@@ -30,7 +30,13 @@ const Testimoni = () => {
                                     <div className="col-6 col-md-7">
                                         <div className="card-body d-flex flex-column">
                                             <div className="h-100">
-                                                <img src={Rate} alt="rate" className="img-fluid mt-5" />
+                                                <div className="rate">
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                </div>
                                                 <p className="fw-bold mt-1">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                                 lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
@@ -55,9 +61,15 @@ const Testimoni = () => {
                                         <div className="card-body d-flex flex-column">
                                             <div className="h-100 jalansendiri">
                                                 <div className="sijhon position-relative d-lg-none d-xxl-none d-md-none d-sm-none d-xl-none">
-                                                <img src={jhon} alt="jhon" />
+                                                    <img src={jhon} alt="jhon" />
                                                 </div>
-                                                <img src={Rate} alt="rate" className="img-fluid mt-5" />
+                                                <div className="rate">
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                </div>
                                                 <p className="fw-bold mt-1">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                                 lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
@@ -81,7 +93,13 @@ const Testimoni = () => {
                                     <div className="col-6 col-md-7">
                                         <div className="card-body d-flex flex-column">
                                             <div className="h-100">
-                                                <img src={Rate} alt="rate" className="img-fluid mt-5" />
+                                                <div className="rate">
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                    <img src={Rate} alt="" />
+                                                </div>
                                                 <p className="fw-bold mt-1">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                                 lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                 sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
