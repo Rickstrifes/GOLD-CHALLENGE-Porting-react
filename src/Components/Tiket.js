@@ -1,7 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { RotatingLines } from "react-loader-spinner";
+import PanahKiri from "../Assets/arrow-left2.svg";
 import { PDFExport } from "@progress/kendo-react-pdf";
+import Rect from "../Assets/rect2.svg";
+import Success from "../Assets/success.svg";
+import Download from "../Assets/download.svg";
 import Invoice from "./Invoice";
 import "../Components/Tiket.css";
 
@@ -55,7 +59,7 @@ const Ticket = () => {
                   <div className="col-md-4">
                     <div className="back-button">
                       <Link to={-1}>
-                        <img src={ArrowLeft} alt="back to detail mobil" />
+                        <img src={PanahKiri} alt="back to detail mobil" />
                       </Link>
                       {dataBank.map((x, key) => {
                         return <h3 key={key}>{x.desc}</h3>;
@@ -96,9 +100,11 @@ const Ticket = () => {
                   </div>
                 </div>
                 <div className="pdf-viewer">
-                  <PDFExport fileName={"invoice"} ref={downloadPDF} paperSize="A4">
-                    <Invoice />
-                  </PDFExport>
+                  {
+                    <PDFExport fileName={"invoice"} ref={downloadPDF} paperSize="A4">
+                      <Invoice />
+                    </PDFExport>
+                  }
                 </div>
               </div>
             </div>

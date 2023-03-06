@@ -1,5 +1,7 @@
 import React from "react";
+import Logo from "../Assets/Logo.svg";
 import "../Components/Invoice.css";
+import { currencyFormat } from "../helper";
 
 const Invoice = () => {
   const mulaiSewa = localStorage.getItem("mulai_sewa");

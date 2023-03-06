@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "../Components/HitunganMenit.css";
 
-const Count10Minute = () => {
+const HitunganMenit = () => {
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
 
@@ -43,4 +43,4 @@ const Count10Minute = () => {
   );
 };
 
-export default Count10Minute;
+export default HitunganMenit;

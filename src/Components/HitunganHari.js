@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "../Components/HitunganHari.css";
 
-const Count1Day = () => {
+const HitunganHari = () => {
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
@@ -47,4 +47,4 @@ const Count1Day = () => {
   );
 };
 
-export default Count1Day;
+export default HitunganHari;

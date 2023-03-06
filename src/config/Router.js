@@ -16,6 +16,13 @@ import Cars from "../Pages/Cars";
 import DetailCars from "../Pages/DetailCars";
 import Signin from "../Pages/Signin";
 import Signup from "../Pages/Signup";
+import Invoice from "../Components/Invoice";
+import Ticket from "../Components/Tiket";
+import PaymentDesk from "../Components/PaymentDesk";
+import PembayaranBank from "../Components/PembayaranBank";
+import Filter from "../Components/Filter";
+import KonfirmasiUpload from "../Components/KonfirmasiUpload";
+import HasilpencarianCardCarDetail from "../Components/HasilpencarianCardCarDetail";
 
 // NOTES: each time you want to add new page, add it here
 
@@ -43,5 +50,33 @@ export const router = createBrowserRouter([
   {
     path: "/signup",
     element: <Signup />,
+  },
+  {
+    path: "/invoice",
+    element: <Invoice />,
+  },
+  {
+    path: "/tiket",
+    element: <Ticket />,
+  },
+  {
+    path: "/PaymentDesk",
+    element: <PaymentDesk />,
+  },
+  {
+    path: "/PembayaranBank",
+    element: <PembayaranBank />,
+  },
+  {
+    path: "/Filter",
+    element: <Filter />,
+  },
+  {
+    path: "/KonfirmasiUpload",
+    element: <KonfirmasiUpload />,
+  },
+  {
+    path: "/hasilpencarian",
+    element: <HasilpencarianCardCarDetail />,
   },
 ]);
