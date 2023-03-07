@@ -10,11 +10,11 @@ import Signin from "../pages/SignIn";
 import Payment from "../pages/Payment";
 import BankConfirm from "../pages/BankConfirm";
 import ETicket from "../pages/ETicket";
-import Auth from "../utils/Auth"
+import Auth from "../utils/Auth";
 import NotFoundPage from "../components/NotFoundPage";
 
 const WithAuth = () => {
-  const isAuth = Auth.isAuthorization()
+  const isAuth = Auth.isAuthorization();
   return (
     <>
       {!isAuth && <Navigate to={"/sign-in"} />}
@@ -28,19 +28,14 @@ const SetupRouter = () => {
 
   return (
     <div className="App">
-      {/* {["/sign-in", "/sign-up"].indexOf(window.location.pathname) === -1 && <Navigation />} */}
-
       {location.pathname !== "/sign-in" && location.pathname !== "/sign-up" && (
         <Navigation />
       )}
 
       <Routes>
-        {/* Public */}
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/sign-in" element={<Signin />} />
         <Route path="/" element={<HomePage />} />
-
-        {/* WithAuth  */}
         <Route element={<WithAuth />}>
           <Route path="/cari-mobil" element={<CariMobil />} />
           <Route path="/detail-mobil/:id" element={<DetailMobil />} />

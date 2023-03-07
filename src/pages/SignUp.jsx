@@ -1,7 +1,6 @@
 import { React, useEffect } from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import APIReg from "../apis/APIReg";
 import Signupkanan from "../assets/images/login.svg";
 import Logoregister from "../assets/images/logo.svg";
@@ -48,14 +47,6 @@ const SignUp = () => {
 
   return (
     <div className="signup">
-      <Helmet>
-        <title>Sign Up</title>
-        <meta name="description" content="Daftar untuk menyewa mobil" />
-        <meta
-          name="keywords"
-          content="sewa mobil, car rental, binar, binar car rental, penyewaan mobil, cari mobil, binar, rental car, sewa mobil murah, cheap car rental, website sewa mobil"
-        />
-      </Helmet>
       <Container fluid>
         <Row>
           <Col className="signup-kiri" sm={12} lg={6} xl={6}>
