@@ -32,10 +32,6 @@ const Filter = (filterData) => {
     setEdit(!edit);
   };
 
-  // const handleEdit = () => {
-
-  // }
-
   const titleRef = useRef();
 
   function handleBackClick() {
